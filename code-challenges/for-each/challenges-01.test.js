@@ -37,16 +37,16 @@ Within the addNumbers function, invoke the callback function as many times as ne
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
-const arr = [];
 
 const addValues = (arr, value) => {
   arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  for (let i = 0; i < times-1; i++) {
+  for (let i = 0; i < times; i++) {
     callback(arr, num);
-  }
+  };
+  return arr;
 };
 
 describe('Testing challenge 2', () => {
@@ -72,16 +72,15 @@ The inventory is formatted like this:
 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
-const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }]
 
 const createList = (availableItems) => {
-  let availableItems = [];
-  inventory.forEach = () => {
-    if (this.available[i] = true {
-      availableItems.push(this.name);
-    });
-  };
-  return availableItems;
+  let newList = [];
+  availableItems.forEach(function(element) {
+    if (element.available === true) {
+      newList.push(element.name);
+    }; 
+  });
+  return newList;
 };
 
 describe('Testing challenge 3', () => {
@@ -107,24 +106,19 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-
 const fizzbuzz = (arr) => {
   let output = [];
-  inputs.forEach(function()
-    if (inputs[i] === 'divisible by three') {
-      output.push('Fizz');
-    };
-    else if (inputs[i] === 'divisible by five') {
-      output.push('Buzz');
-    }
-    else if (inputs[i] === 'divisible by three' && 'divisible by five') {
+  arr.forEach(function(element) {
+    if (element%3 === 0 && element%5 === 0) {
       output.push('Fizz Buzz');
-    }
-    else if (inputs[i] !== 'divisible by three' || 'divisible by five') {
-      outpush.push(inputs[i]);
+    } else if (element%3 === 0) {
+      output.push('Fizz');
+    } else if (element%5 === 0) {
+      output.push('Buzz');
+    } else {
+      output.push(element);
     };
-  );
+  });
   return output;
 };
 
