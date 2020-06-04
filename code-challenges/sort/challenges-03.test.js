@@ -9,7 +9,7 @@ CHALLENGE 1 - Review
 Write a function named changeAllClassNames that uses jQuery to select all each li and add a class of "fruit";
 
 ------------------------------------------------------------------------------------------------ */
-const $ = createSnippetWithJQuery(`
+let $ = createSnippetWithJQuery(`
 <ul id="fruits">
   <li class="apple">Apple</li>
   <li class="orange">Orange</li>
@@ -19,6 +19,7 @@ const $ = createSnippetWithJQuery(`
 
 const changeAllClassNames = () => {
   // Solution code here...
+  $('ul li').addClass('fruit');
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -29,6 +30,10 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 
 const sortBackwards = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => {
+    return b - a;
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,6 +48,16 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 
 const alphabetize = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => {
+    if(a < b) {
+      return -1;
+    } else if (a > b) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -53,6 +68,10 @@ Write a function named sortByLength that takes in an array of strings and return
 
 const sortByLength = (arr) => {
   // Solution code here...
+  arr.sort(function(a, b) {
+    return a.length - b.length;
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,6 +84,16 @@ For example, ['Alphabet', 'alphabet', 'carrot', 'Zebra'] is correctly sorted, an
 
 const alphabetizeBetter = (arr) => {
   // Solution code here...
+  arr.sort((a, b) => {
+    if(a.toLowerCase() > b.toLowerCase()) {
+      return 1;
+    } else if (a.toLowerCase() < b.toLowerCase()) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -177,7 +206,7 @@ CHALLENGE 12 - Stretch Goal
 
 Without altering the html, write a function named addPearClass that uses jQuery to add a class of "pear" to the third li.
 ------------------------------------------------------------------------------------------------ */
-const $ = createSnippetWithJQuery(`
+$ = createSnippetWithJQuery(`
 <ul id="fruits">
   <li class="apple">Apple</li>
   <li class="orange">Orange</li>
@@ -238,7 +267,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should alphabetize without regard to capitalization', () => {
     expect(alphabetizeBetter(['Alice', 'apple', 'alert', 'Average'])).toStrictEqual([ 'alert', 'Alice', 'apple', 'Average' ]);
     const ans = alphabetizeBetter(['alphabet', 'Zebra', 'Alphabet', 'carrot']);
