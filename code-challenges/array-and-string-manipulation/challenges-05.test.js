@@ -38,12 +38,18 @@ let $ = createSnippetWithJQuery(`
 
 const templateWithJQuery = () => {
   // Solution code here...
-  let template = $('#template').html();
-  let $name = $(`<h2>${starWarsPeople.name}</h2>`);
-  let $height = $(`<h3>${starWarsPeople.height}</h3>`);
-  let $eye_color = $(`<p>${starWarsPeople.eye_color}</p>`);
-  $('main').append($name, $height, $eye_color);
-  
+  // let $name = $(`<h2>${starWarsPeople.name}</h2>`);
+  // let $height = $(`<h3>${starWarsPeople.height}</h3>`);
+  // let $eye_color = $(`<p>${starWarsPeople.eye_color}</p>`);
+  starWarsPeople.forEach(value => {
+    let template = $('#template').html();
+    const $section = $(`<section></section>`);
+    $section.html(template);
+    $section.find('h2').text(value.name);
+    $section.find('h3').text(value.height);
+    $section.find('p').text(value.eye_color);
+    $('main').append($section);
+  })
 }
 
 /* ------------------------------------------------------------------------------------------------
