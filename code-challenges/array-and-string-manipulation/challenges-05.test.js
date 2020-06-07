@@ -38,6 +38,12 @@ let $ = createSnippetWithJQuery(`
 
 const templateWithJQuery = () => {
   // Solution code here...
+  let template = $('#template').html();
+  let $name = $(`<h2>${starWarsPeople.name}</h2>`);
+  let $height = $(`<h3>${starWarsPeople.height}</h3>`);
+  let $eye_color = $(`<p>${starWarsPeople.eye_color}</p>`);
+  $('main').append($name, $height, $eye_color);
+  
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -56,6 +62,18 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+  result.push(str);
+  let workingArray = str.split('');
+  workingArray.forEach(function(){
+    // delete the first index and then push into result
+    let newArray = workingArray.slice(1,7);
+    // console.log(workingArray.slice(0,7));
+    workingArray = newArray;
+    // join() new array back together minus first index
+    let finalArray = newArray.join("");
+    result.push(finalArray);
+  })
+  // console.log('I am the console', result);
   return result;
 };
 
@@ -69,6 +87,9 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  let array = arr.split('');
+  // console.log('I am the console', array);
+  return array;
 };
 
 
