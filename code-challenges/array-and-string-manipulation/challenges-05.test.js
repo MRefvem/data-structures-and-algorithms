@@ -143,6 +143,13 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  // single out ingredients and run forEach over that array and extract strings
+  recipe.ingredients.forEach(str => {
+    // define str as sliced version of string but iterate over .length to get whole words
+    str = str.slice(5,str.length);
+    // push into result
+    result.push(str.slice(str.indexOf(' ')+1, str.length));
+  })
   return result;
 };
 
