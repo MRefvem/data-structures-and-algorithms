@@ -15,7 +15,6 @@ const createServer = () => {
 
   try {
     app.get('/hello', (request, response) => {
-      console.log('Hello');
       response.status(200).send('Hello');
     });
 
@@ -94,12 +93,14 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   const newArray = [];
-  input.map(arrays => {
-    arrays.map(numbers => {
-      if(numbers % 5 === 0){
-        newArray.push(Math.pow(2, numbers));
+  input.forEach(arrays => {
+    let equation = arrays.reduce((numbers, number) => {
+      if(number % 5 === 0 && typeof number === 'number'){
+        numbers.push(Math.pow(2, number));
       }
-    })
+    return numbers;
+    }, [])
+    newArray.push(equation);
   })
   return newArray;
 };
