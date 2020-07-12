@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace ArrayShift
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -12,7 +12,7 @@ namespace ArrayShift
             InsertShiftArray(new int[] { 4, 8, 15, 23, 42 }, 16);
         }
 
-        static int[] InsertShiftArray(int[] array, int value)
+        public static int[] InsertShiftArray(int[] array, int value)
         {
 
             Console.WriteLine($"The value of passed-in array is {string.Join(",", array)}");
