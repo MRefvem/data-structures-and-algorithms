@@ -77,5 +77,65 @@ namespace LinkedListImplementation
 
             return sb.ToString();
         }
+
+        public void AppendNewNode(int value)
+        {
+            Current = Head;
+            while (Current != null)
+            {
+                if (Current.Next == null)
+                {
+                    Current.Next = new Node(value);
+                    break;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        public void InsertBefore(int value, int newVal)
+        {
+            Current = Head;
+            // add an edge case exception
+            if (Current.Value == value)
+            {
+                // insert before
+                Node temp = Current;
+                Current = new Node(newVal);
+                Current.Next = temp;
+                Head = Current;
+                return;
+            }
+            // The way you traverse linkedlist is by using while loops
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == value)
+                {
+                    // insert before
+                    Node temp = Current;
+                    Current = new Node(newVal);
+                    Current.Next = temp.Next;
+                    temp.Next = Current;
+                    break;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        public void InsertAfter(int value, int newVal)
+        {
+            Current = Head;
+            while (Current != null)
+            {
+                if (Current.Value == value)
+                {
+                    // insert after
+                    Node newNode = new Node(newVal);
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                    break;
+                }
+                Current = Current.Next;
+            }
+        }
     }
 }
