@@ -8,4 +8,4 @@ Creating methods, Append(value), InsertBefore(value, newVal), InsertAfter(value,
 The approach was to break down all of the steps necessary to creating LinkedLists into little pieces, and imagining different methods that could go into creating and then modifying the lists
 
 ## Solution
-[WhiteBoard Code Challenge 6](CodeChallenge06WB.png)
+![WhiteBoard Code Challenge 6](CodeChallenge06WB.png)
