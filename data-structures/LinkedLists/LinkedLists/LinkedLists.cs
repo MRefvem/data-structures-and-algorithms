@@ -155,6 +155,11 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// Method iterates through LinkedList using two references (runner and walker) at seperate intervals in order to find the Node that is at the K to the Nth position
+        /// </summary>
+        /// <param name="key">Key here refers to the number of positions from the end you want to locate</param>
+        /// <returns>Return statement is the node that is Kth from the End</returns>
         public int FindKthFromTheEnd(int key)
         {
             if (key < 0)
