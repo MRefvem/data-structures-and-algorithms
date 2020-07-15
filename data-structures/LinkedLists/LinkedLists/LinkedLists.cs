@@ -78,6 +78,10 @@ namespace LinkedListImplementation
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Takes in a value and appends it as the final node of the list
+        /// </summary>
+        /// <param name="value">the int we want to append to the end</param>
         public void AppendNewNode(int value)
         {
             Current = Head;
@@ -92,6 +96,11 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// Method assesses the value of a node, locates its position and inserts a new value BEFORE that position
+        /// </summary>
+        /// <param name="value">Value of the node we're looking for in the list</param>
+        /// <param name="newVal">Value of the node we're creating to insert before</param>
         public void InsertBefore(int value, int newVal)
         {
             Current = Head;
@@ -121,6 +130,12 @@ namespace LinkedListImplementation
             }
         }
 
+        /// <summary>
+        /// Method assesses the value of a node, locates its position and inserts a new value AFTER that position
+        /// </summary>
+        /// </summary>
+        /// <param name="value">Value of the node we are locating in the list</param>
+        /// <param name="newVal">Value of the node we're creating to insert after the previous value</param>
         public void InsertAfter(int value, int newVal)
         {
             Current = Head;
@@ -136,6 +151,41 @@ namespace LinkedListImplementation
                 }
                 Current = Current.Next;
             }
+        }
+
+        public int FindKthFromTheEnd(int key)
+        {
+            if (key < 0)
+            {
+                throw new Exception("K is invalid");
+            }
+            // Create 2 references
+            Node walker = Head;
+            Node runner = Head;
+
+            // runner to iterate k number of positions within linked list
+            int k = key;
+            while (k > 0)
+            {
+                if (runner.Next != null)
+                {
+                    k--;
+                    runner = runner.Next;
+                }
+                else
+                {
+                    throw new Exception("K is invalid");
+                }
+            }
+
+            while (runner.Next != null)
+            {
+                walker = walker.Next;
+                runner = runner.Next;
+            }
+
+            return walker.Value;
+
         }
     }
 }
