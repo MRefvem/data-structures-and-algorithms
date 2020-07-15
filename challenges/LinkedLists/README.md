@@ -4,7 +4,7 @@ The purpose of this Code Challenges is to practice creating LinkedLists through 
 ## Challenge Description
 Creating methods, Append(value), InsertBefore(value, newVal), InsertAfter(value, newVal).
 
-Creating method: FindKthFromTheEnd(key)
+Creating method: FindKthFromTheEnd(key) - Iterate through the list and locate the node that is at the Kth position from the end of the list
 
 ## Approach & Efficiency
 The approach was to break down all of the steps necessary to creating LinkedLists into little pieces, and imagining different methods that could go into creating and then modifying the lists
@@ -19,4 +19,4 @@ FindKthFromTheEnd: O(n) efficiency because the method needs to iterate through t
 
 ## Solution
 ![Whiteboard Code Challenge 6](CodeChallenge06WB.png)
-![Whiteboard Code Challenge 7]()
+![Whiteboard Code Challenge 7](WB-code-challenge-07.png)
