@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace LinkedListImplementation
@@ -159,6 +161,7 @@ namespace LinkedListImplementation
             {
                 throw new Exception("K is invalid");
             }
+            
             // Create 2 references
             Node walker = Head;
             Node runner = Head;

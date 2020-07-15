@@ -279,5 +279,59 @@ namespace LinkedListsTest
             // Assert
             Assert.Equal("K is invalid", ex.Message);
         }
+
+        [Fact]
+        public void WhereKIsGreaterThanLengthOfList()
+        {
+            // Arrange
+            LinkedLists list = new LinkedLists();
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act
+            var kTooBig = Assert.Throws<Exception>(() => list.FindKthFromTheEnd(7));
+
+            // Assert
+            Assert.Equal("K is invalid", kTooBig.Message);
+
+        }
+
+        [Fact]
+        public void WhereKIsntAPositiveInt()
+        {
+            // Arrange
+            LinkedLists list = new LinkedLists();
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act
+            var kNegative = Assert.Throws<Exception>(() => list.FindKthFromTheEnd(-7));
+
+            // Assert
+            Assert.Equal("K is invalid", kNegative.Message);
+        }
+
+        [Fact]
+        public void WhereLinkedListIsSizeOfOne()
+        {
+            // Arrange
+            LinkedLists list = new LinkedLists();
+
+            list.Insert(10);
+
+            // Act
+            var k = Assert.Throws<Exception>(() => list.FindKthFromTheEnd(1));
+
+            // Assert
+            Assert.Equal("K is invalid", k.Message);
+        }
     }
 }
