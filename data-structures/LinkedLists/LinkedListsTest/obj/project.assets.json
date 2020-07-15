@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\challenges\\LinkedLists\\LinkedListsTest\\LinkedListsTest.csproj",
+      "projectUniqueName": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\data-structures\\LinkedLists\\LinkedListsTest\\LinkedListsTest.csproj",
       "projectName": "LinkedListsTest",
-      "projectPath": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\challenges\\LinkedLists\\LinkedListsTest\\LinkedListsTest.csproj",
+      "projectPath": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\data-structures\\LinkedLists\\LinkedListsTest\\LinkedListsTest.csproj",
       "packagesPath": "C:\\Users\\mkref\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\challenges\\LinkedLists\\LinkedListsTest\\obj\\",
+      "outputPath": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\data-structures\\LinkedLists\\LinkedListsTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -3550,8 +3550,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\challenges\\LinkedLists\\LinkedLists\\LinkedLists.csproj": {
-              "projectPath": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\challenges\\LinkedLists\\LinkedLists\\LinkedLists.csproj"
+            "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\data-structures\\LinkedLists\\LinkedLists\\LinkedLists.csproj": {
+              "projectPath": "C:\\Users\\mkref\\codefellows\\data-structures-and-algorithms\\data-structures\\LinkedLists\\LinkedLists\\LinkedLists.csproj"
             }
           }
         }

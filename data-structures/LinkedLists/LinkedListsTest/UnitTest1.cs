@@ -239,5 +239,45 @@ namespace LinkedListsTest
             Assert.Equal(expected, list.ToString());
 
         }
+
+        [Fact]
+        public void CanReturnKthFromEndHappyPath()
+        {
+            // Arrange
+            LinkedLists list = new LinkedLists();
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act
+
+            int value = list.FindKthFromTheEnd(1);
+
+            // Assert
+            Assert.Equal(20, value);
+
+        }
+
+        [Fact]
+        public void CanReturnExceptionForEqualLength()
+        {
+            // Arrange
+            LinkedLists list = new LinkedLists();
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act
+            var ex = Assert.Throws<Exception>(() => list.FindKthFromTheEnd(5));
+
+            // Assert
+            Assert.Equal("K is invalid", ex.Message);
+        }
     }
 }
