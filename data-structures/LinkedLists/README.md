@@ -18,5 +18,5 @@ InsertAfter: O(n) efficiency because uses a while loop to iterate through the li
 FindKthFromTheEnd: O(n) efficiency because the method needs to iterate through the entire list to see where the end of the list is
 
 ## Solution
-![Whiteboard Code Challenge 6](CodeChallenge06WB.png)
-![Whiteboard Code Challenge 7](WB-code-challenge-07.png)
+![Whiteboard Code Challenge 6](assets/CodeChallenge06WB.png)
+![Whiteboard Code Challenge 7](assets/WB-code-challenge-07.png)
