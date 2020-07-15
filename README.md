@@ -1,21 +1,23 @@
 # data-structures-and-algorithms
-This repository contains daily sets of code challenges for Code Fellows courses Code 301 and 401
 
 # Table of Contents
 
-## 301 Code Challenges (JavaScript, located in "code-challenges" folder)
-- array-and-string-manipulation
-- chaining-methods
-- filter
-- for-each
-- map
-- object.keys-object.values-object.entries
-- reduce
-- regular-expressions-1
-- regular-expressions-2
-- sort
-- value-vs-reference
+## Code Challenges (C#)
+- [ArrayShift](challenges/ArrayShift)
 
-## 401 Code Challenges (C#, located in "challenges" folder)
-- ArrayShift
-- LinkedLists
+## Data Structures (C#)
+- [LinkedLists](data-structures/LinkedLists)
+
+## Code Challenges (JavaScript)
+- [Array and String Manipulation](challenges/array-and-string-manipulation)
+- [Chaining Methods](challenges/chaining-methods)
+- [Filter](challenges/filter)
+- [For Each](challenges/for-each)
+- [Map](challenges/map)
+- [Object Keys, Object Values, Object Entries](challenges/object.keys-object.values-object.entries)
+- [Reduce](challenges/reduce)
+- [Regular Expressions 1](challenges/regular-expressions-1)
+- [Regular Expressions 2](challenges/regular-expressions-2)
+- [Sort](challenges/sort)
+- [Value vs Reference](challenges/value-vs-reference)
+
