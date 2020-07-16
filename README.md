@@ -4,6 +4,7 @@
 
 ## Code Challenges (C#)
 - [ArrayShift](challenges/ArrayShift)
+- [LinkedListZip](challenges/LLZip)
 
 ## Data Structures (C#)
 - [LinkedLists](data-structures/LinkedLists)
