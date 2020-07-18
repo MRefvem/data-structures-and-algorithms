@@ -1,7 +1,7 @@
-# Challenge Summary
+# Data Structure Summary
 The purpose of this Code Challenges is to practice creating LinkedLists through a library and running UnitTests to check if the methods are sound.
 
-## Challenge Description
+## Data Structure Description
 Creating methods, Append(value), InsertBefore(value, newVal), InsertAfter(value, newVal).
 
 Creating method: FindKthFromTheEnd(key) - Iterate through the list and locate the node that is at the Kth position from the end of the list
