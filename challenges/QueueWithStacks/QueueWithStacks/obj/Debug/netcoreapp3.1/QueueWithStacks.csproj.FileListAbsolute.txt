@@ -1,0 +1,12 @@
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp3.1\QueueWithStacks.deps.json
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp3.1\QueueWithStacks.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp3.1\QueueWithStacks.pdb
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp3.1\StacksAndQueues.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp3.1\StacksAndQueues.pdb
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.csprojAssemblyReference.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.AssemblyInfoInputs.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.AssemblyInfo.cs
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.csproj.CoreCompileInputs.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.csproj.CopyComplete
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp3.1\QueueWithStacks.pdb

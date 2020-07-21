@@ -6,7 +6,7 @@ namespace StacksAndQueues
 {
     public class Stack
     {
-        private Node Top { get; set; }
+        public Node Top { get; set; }
 
         /// <summary>
         /// Push Method - takes in a string as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance
