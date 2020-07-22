@@ -6,6 +6,7 @@
 - [ArrayShift](challenges/ArrayShift)
 - [LinkedListZip](challenges/LLZip)
 - [QueueWithStacks](challenges/QueueWithStacks)
+- [FIFOAnimalShelter](challenges/FIFOAnimalShelter)
 
 ## Data Structures (C#)
 - [LinkedLists](data-structures/LinkedLists)
