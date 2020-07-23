@@ -4,24 +4,19 @@ using StacksAndQueues;
 
 namespace MultiBracketValidation
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            MultiBracketValidation("{}");
-            MultiBracketValidation("{}(){}");
-            MultiBracketValidation("()[[Extra Characters}}");
-            MultiBracketValidation("(){}[[]]");
-            MultiBracketValidation("{}{Code}[Fellows](())");
-            MultiBracketValidation("[({}]");
-            MultiBracketValidation("(](");
-            MultiBracketValidation("{(})");
-            MultiBracketValidation("()");
-            MultiBracketValidation(")(");
         }
 
-        public static bool MultiBracketValidation(string input)
+        /// <summary>
+        /// MultiBracketValidation - Method to evaluate strings and contained bracket pairs
+        /// </summary>
+        /// <param name="input">The string you want to evaluate</param>
+        /// <returns>A boolean representing whether or not the brackets in the string are complementary</returns>
+        public static bool MultiBracketValidationMethod(string input)
         {
 
             char openingRound = '(';
@@ -31,44 +26,66 @@ namespace MultiBracketValidation
             char openingCurly = '{';
             char closingCurly = '}';
 
-            StacksAndQueues.Stack<char> tempStack = new StacksAndQueues.Stack<char>();
-            Dictionary<char, char> keyValues = new Dictionary<char, char>();
+            bool hasOpeningRound = input.Contains(openingRound);
+            bool hasClosingRound = input.Contains(closingRound);
+            bool hasOpeningSquare = input.Contains(openingSquare);
+            bool hasClosingSquare = input.Contains(closingSquare);
+            bool hasOpeningCurly = input.Contains(openingCurly);
+            bool hasClosingCurly = input.Contains(closingCurly);
 
-            keyValues.Add(openingRound, closingRound);
-            keyValues.Add(openingSquare, closingSquare);
-            keyValues.Add(openingCurly, closingCurly);
+            StacksAndQueues.Stack<char> tempStack = new StacksAndQueues.Stack<char>();
+
+            bool hasSpecialChar = false;
+
+            var inputArray = input.ToCharArray();
+            for (int i = 0; i < inputArray.Length; i++)
+            {
+                if (inputArray[i] == openingRound || inputArray[i] == closingRound || inputArray[i] == openingSquare || inputArray[i] == closingSquare || inputArray[i] == openingCurly || inputArray[i] == closingCurly)
+                {
+                    hasSpecialChar = true;
+                }
+            }
 
             try
             {
-                for (int i = 0; i < input.Length; i++)
+                if (input.Length < 2 || hasOpeningRound && !hasClosingRound || hasOpeningSquare && !hasClosingSquare || hasOpeningCurly && !hasClosingCurly
+                    || !hasOpeningRound && hasClosingRound || !hasOpeningSquare && hasClosingSquare || !hasOpeningCurly && hasClosingCurly || !hasSpecialChar)
                 {
-                    // filter for the opening shapes
-                    if (input[i] == openingRound || input[i] == openingSquare || input[i] == openingCurly)
+                    return false;
+                }
+                else
+                {
+                    for (int i = 0; i < input.Length; i++)
                     {
-                        tempStack.Push(input[i]);
-                    }
-                    else if (input[i] == closingRound || input[i] == closingSquare || input[i] == closingCurly)
-                    {
-                        char tempChar = tempStack.Peek();
-
-                        if (keyValues[tempChar] == input[i])
+                        // filter for the opening shapes
+                        if (input[i] == openingRound || input[i] == openingSquare || input[i] == openingCurly)
                         {
-                            tempStack.Pop();
+                            tempStack.Push(input[i]);
                         }
-                        else
+                        else if (input[i] == closingRound || input[i] == closingSquare || input[i] == closingCurly)
                         {
-                            Console.WriteLine(false);
+
+                            if (input[i] == closingRound && tempStack.Top.Value == openingRound || input[i] == closingSquare && tempStack.Top.Value == openingSquare || input[i] == closingCurly && tempStack.Top.Value == openingCurly)
+                            {
+                                // what if this value is null?
+                                tempStack.Pop();
+                            }
+                            else
+                            {
+                                return false;
+                            }
+                        }
+                        else if (input[input.Length-1] == openingRound || input[input.Length - 1] == openingSquare || input[input.Length - 1] == openingCurly)
+                        {
                             return false;
                         }
                     }
+                    return tempStack.IsEmpty();
                 }
-                Console.WriteLine(tempStack.IsEmpty());
-                return tempStack.IsEmpty();
             }
             catch (Exception)
             {
-                Console.WriteLine(false);
-                return false;
+                throw;
             }
         }
     }
