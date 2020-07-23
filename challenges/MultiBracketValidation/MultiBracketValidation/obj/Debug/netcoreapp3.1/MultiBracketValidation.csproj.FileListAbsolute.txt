@@ -11,3 +11,6 @@ C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracke
 C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracketValidation\MultiBracketValidation\obj\Debug\netcoreapp3.1\MultiBracketValidation.dll
 C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracketValidation\MultiBracketValidation\obj\Debug\netcoreapp3.1\MultiBracketValidation.pdb
 C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracketValidation\MultiBracketValidation\obj\Debug\netcoreapp3.1\MultiBracketValidation.genruntimeconfig.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracketValidation\MultiBracketValidation\bin\Debug\netcoreapp3.1\StacksAndQueues.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracketValidation\MultiBracketValidation\bin\Debug\netcoreapp3.1\StacksAndQueues.pdb
+C:\Users\mkref\codefellows\data-structures-and-algorithms\challenges\MultiBracketValidation\MultiBracketValidation\obj\Debug\netcoreapp3.1\MultiBracketValidation.csproj.CopyComplete

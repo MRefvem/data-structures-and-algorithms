@@ -11,7 +11,7 @@ namespace XUnitTestProject1
         public void CanPushOnStack()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
             // Act
             stack.Push("candy cane");
@@ -27,7 +27,7 @@ namespace XUnitTestProject1
         public void CanPushMultiple()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
             // Act
             stack.Push("candy cane");
@@ -47,7 +47,7 @@ namespace XUnitTestProject1
         public void CanPopOffStack()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
             // Act
             stack.Push("candy cane");
@@ -65,7 +65,7 @@ namespace XUnitTestProject1
         public void CanEmptyStack()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
             // Act
             stack.Push("candy cane");
@@ -85,7 +85,7 @@ namespace XUnitTestProject1
         public void CanPeekNextItem()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
 
             // Act
@@ -103,7 +103,7 @@ namespace XUnitTestProject1
         public void InstantiateEmptyStack()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
             // Act & Assert
             Assert.True(stack.IsEmpty());
@@ -114,7 +114,7 @@ namespace XUnitTestProject1
         public void CallingOnEmptyRaisesException()
         {
             // Arrange
-            Stack stack = new Stack();
+            Stack<string> stack = new Stack<string>();
 
             // Act
             Exception e = Assert.Throws<Exception>(() => stack.Pop());

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using StacksAndQueues;
@@ -13,7 +12,7 @@ namespace XUnitTestProject1
         public void CanEnqueueIntoQueue()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act
             queue.Enqueue("Josie Cat");
@@ -30,7 +29,7 @@ namespace XUnitTestProject1
         public void CanEnqueueMultiple()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act
             queue.Enqueue("Josie Cat");
@@ -53,7 +52,7 @@ namespace XUnitTestProject1
         public void CanSuccessfullyDequeue()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act
             queue.Enqueue("Josie Cat");
@@ -77,7 +76,7 @@ namespace XUnitTestProject1
         public void CanPeekIntoQueue()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act
             queue.Enqueue("Josie Cat");
@@ -96,7 +95,7 @@ namespace XUnitTestProject1
         public void CanSuccessfullyEmpty()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act
             queue.Enqueue("Josie Cat");
@@ -124,7 +123,7 @@ namespace XUnitTestProject1
         public void CanInstantiateEmpty()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act & Assert
             Assert.True(queue.IsEmpty());
@@ -135,7 +134,7 @@ namespace XUnitTestProject1
         public void CallingOnEmptyRaisesException()
         {
             // Arrange
-            Queue queue = new Queue();
+            Queue<string> queue = new Queue<string>();
 
             // Act
             Exception e = Assert.Throws<Exception>(() => queue.Dequeue());

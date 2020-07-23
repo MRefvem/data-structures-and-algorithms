@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
-using 
+using System.Collections.Generic;
+using StacksAndQueues;
 
 namespace MultiBracketValidation
 {
@@ -17,16 +17,12 @@ namespace MultiBracketValidation
             MultiBracketValidation("[({}]");
             MultiBracketValidation("(](");
             MultiBracketValidation("{(})");
+            MultiBracketValidation("()");
+            MultiBracketValidation(")(");
         }
 
         public static bool MultiBracketValidation(string input)
         {
-            bool isValid = true;
-            bool isNotValid = false;
-
-            //string[] charArray = input.Split(Char[']);
-
-            //char[] newCharArray = new char[charArray];
 
             char openingRound = '(';
             char closingRound = ')';
@@ -35,55 +31,45 @@ namespace MultiBracketValidation
             char openingCurly = '{';
             char closingCurly = '}';
 
-            char 
+            StacksAndQueues.Stack<char> tempStack = new StacksAndQueues.Stack<char>();
+            Dictionary<char, char> keyValues = new Dictionary<char, char>();
 
-            for (int i = 0; i < input.Length; i++)
+            keyValues.Add(openingRound, closingRound);
+            keyValues.Add(openingSquare, closingSquare);
+            keyValues.Add(openingCurly, closingCurly);
+
+            try
             {
-                // Create a stack to keep track of the opening brackets
-                // Use stacks and queues library
+                for (int i = 0; i < input.Length; i++)
+                {
+                    // filter for the opening shapes
+                    if (input[i] == openingRound || input[i] == openingSquare || input[i] == openingCurly)
+                    {
+                        tempStack.Push(input[i]);
+                    }
+                    else if (input[i] == closingRound || input[i] == closingSquare || input[i] == closingCurly)
+                    {
+                        char tempChar = tempStack.Peek();
 
-                if (input[i] == openingRound)
-                {
-                    if (input[i] != closingRound)
-                    {
-                        Console.WriteLine(isNotValid);
-                        return isNotValid;
-                    }
-                    else
-                    {
-                        Console.WriteLine(isValid);
-                        return isValid;
+                        if (keyValues[tempChar] == input[i])
+                        {
+                            tempStack.Pop();
+                        }
+                        else
+                        {
+                            Console.WriteLine(false);
+                            return false;
+                        }
                     }
                 }
-                else if (input[i] == openingSquare)
-                {
-                    if (input[i] != closingSquare)
-                    {
-                        Console.WriteLine(isNotValid);
-                        return isNotValid;
-                    }
-                    else
-                    {
-                        Console.WriteLine(isValid);
-                        return isValid;
-                    }
-                }
-                else if (input[i] == openingCurly)
-                {
-                    if (input[i] != closingCurly)
-                    {
-                        Console.WriteLine(isNotValid);
-                        return isNotValid;
-                    }
-                    else
-                    {
-                        Console.WriteLine(isValid);
-                        return isValid;
-                    }
-                }
+                Console.WriteLine(tempStack.IsEmpty());
+                return tempStack.IsEmpty();
             }
-            Console.WriteLine(isNotValid);
-            return isNotValid;
+            catch (Exception)
+            {
+                Console.WriteLine(false);
+                return false;
+            }
         }
     }
 }
