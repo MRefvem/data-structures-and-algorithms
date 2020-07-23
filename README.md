@@ -7,6 +7,7 @@
 - [LinkedListZip](challenges/LLZip)
 - [QueueWithStacks](challenges/QueueWithStacks)
 - [FIFOAnimalShelter](challenges/FIFOAnimalShelter)
+- [MultiBracketValidation](challenges/MultiBracketValidation)
 
 ## Data Structures (C#)
 - [LinkedLists](data-structures/LinkedLists)
