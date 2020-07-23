@@ -4,18 +4,18 @@ using System.Text;
 
 namespace StacksAndQueues
 {
-    public class Stack
+    public class Stack<T>
     {
-        public Node Top { get; set; }
+        public Node<T> Top { get; set; }
 
         /// <summary>
         /// Push Method - takes in a string as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance
         /// </summary>
         /// <param name="value">the string value you want to insert into the stack</param>
-        public void Push(string value)
+        public void Push(T value)
         {
             // Create a new node
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
             node.Next = Top;
             Top = node;
         }
@@ -24,11 +24,11 @@ namespace StacksAndQueues
         /// Pop Method - removes the node from the top of the stack and returns the node's value. Raises and exception when called on an empty stack
         /// </summary>
         /// <returns>value of the node that was removed from the stack</returns>
-        public string Pop()
+        public T Pop()
         {
             if (Top != null)
             {
-                Node temp = Top;
+                Node<T> temp = Top;
                 Top = Top.Next;
                 temp.Next = null;
                 return temp.Value;
@@ -43,7 +43,7 @@ namespace StacksAndQueues
         /// Peek Method - returns the value of the node located on top of the stack, without removing it from the stack
         /// </summary>
         /// <returns>the value of the node at the top of the stack if it exists</returns>
-        public string Peek()
+        public T Peek()
         {
             if (Top != null)
             {

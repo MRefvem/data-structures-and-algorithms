@@ -4,10 +4,10 @@ using System.Text;
 
 namespace StacksAndQueues
 {
-    public class Queue
+    public class Queue<T>
     {
-        private Node Front { get; set; }
-        private Node Rear { get; set; }
+        private Node<T> Front { get; set; }
+        private Node<T> Rear { get; set; }
 
         public Queue()
         {
@@ -18,10 +18,10 @@ namespace StacksAndQueues
         /// Enqueue Method - takes in a string as an argument and adds a new node with that value to the front of the queue with an O(1) Time performance
         /// </summary>
         /// <param name="value">the string value you want to insert into the queue</param>
-        public void Enqueue(string value)
+        public void Enqueue(T value)
         {
             // Create a new node
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
 
             if (Front == null)
             {
@@ -39,11 +39,11 @@ namespace StacksAndQueues
         /// Dequeue Method - removes the node from the front of the queue and returns the node's value. Raises and exception when called on an empty queue
         /// </summary>
         /// <returns>value of the node that was removed from the queue/returns>
-        public string Dequeue()
+        public T Dequeue()
         {
             if (Front != null)
             {
-                Node temp = Front;
+                Node<T> temp = Front;
                 Front = Front.Next;
                 temp.Next = null;
                 return temp.Value;
@@ -58,7 +58,7 @@ namespace StacksAndQueues
         /// Peek Method - returns the value of the node located on front of the queue, without removing it from the queue
         /// </summary>
         /// <returns>the value of the node at the front of the queue if it exists</returns>
-        public string Peek()
+        public T Peek()
         {
             if (Front != null)
             {
