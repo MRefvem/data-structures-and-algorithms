@@ -12,6 +12,7 @@
 ## Data Structures (C#)
 - [LinkedLists](data-structures/LinkedLists)
 - [StacksAndQueues](data-structures/StacksAndQueues)
+- [Trees](data-structures/Trees)
 
 ## Code Challenges (JavaScript)
 - [Array and String Manipulation](challenges/array-and-string-manipulation)
