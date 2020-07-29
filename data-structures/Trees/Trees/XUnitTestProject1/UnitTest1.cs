@@ -232,5 +232,101 @@ namespace XUnitTestProject1
             Assert.True(result5);
 
         }
+
+        [Fact]
+        public void CanFindMaximumValueOfTree()
+        {
+            // Arrange
+            Tree<int> tree = new Tree<int>();
+
+            Node<int> root = new Node<int>(2);
+            Node<int> b = new Node<int>(7);
+            Node<int> c = new Node<int>(5);
+            Node<int> d = new Node<int>(2);
+            Node<int> e = new Node<int>(6);
+            Node<int> f = new Node<int>(9);
+            Node<int> g = new Node<int>(5);
+            Node<int> h = new Node<int>(11);
+            Node<int> i = new Node<int>(4);
+
+            tree.Root = root;
+
+            root.LeftChild = b;
+            root.RightChild = c;
+
+            b.LeftChild = d;
+            b.RightChild = e;
+
+            c.RightChild = f;
+
+            e.LeftChild = g;
+            e.RightChild = h;
+
+            f.LeftChild = i;
+
+            // Act
+
+            int maxValue = tree.MaxValueOfTree(tree.Root);
+
+            // Assert
+
+            Assert.NotEqual(2, maxValue);
+            Assert.NotEqual(4, maxValue);
+            Assert.NotEqual(5, maxValue);
+            Assert.NotEqual(6, maxValue);
+            Assert.NotEqual(7, maxValue);
+            Assert.NotEqual(9, maxValue);
+            Assert.Equal(11, maxValue);
+
+        }
+
+        [Fact]
+        public void CanFindMaximumValueOfTree2()
+        {
+            // Arrange
+            Tree<int> tree = new Tree<int>();
+
+            Node<int> root = new Node<int>(23);
+            Node<int> b = new Node<int>(79);
+            Node<int> c = new Node<int>(53);
+            Node<int> d = new Node<int>(25);
+            Node<int> e = new Node<int>(61);
+            Node<int> f = new Node<int>(90);
+            Node<int> g = new Node<int>(5);
+            Node<int> h = new Node<int>(11);
+            Node<int> i = new Node<int>(44);
+
+            tree.Root = root;
+
+            root.LeftChild = b;
+            root.RightChild = c;
+
+            b.LeftChild = d;
+            b.RightChild = e;
+
+            c.RightChild = f;
+
+            e.LeftChild = g;
+            e.RightChild = h;
+
+            f.LeftChild = i;
+
+            // Act
+
+            int maxValue = tree.MaxValueOfTree(tree.Root);
+
+            // Assert
+
+            Assert.NotEqual(23, maxValue);
+            Assert.NotEqual(79, maxValue);
+            Assert.NotEqual(53, maxValue);
+            Assert.NotEqual(25, maxValue);
+            Assert.NotEqual(61, maxValue);
+            Assert.Equal(90, maxValue);
+            Assert.NotEqual(5, maxValue);
+            Assert.NotEqual(11, maxValue);
+            Assert.NotEqual(44, maxValue);
+
+        }
     }
 }
