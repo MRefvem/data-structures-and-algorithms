@@ -125,5 +125,51 @@ namespace Trees
 
             traversal.Add(root.Value);
         }
+
+        /// <summary>
+        /// Public MaxValueOfTree - Returns the max value of a node in a tree
+        /// </summary>
+        /// <param name="root">The root of the tree passed in</param>
+        /// <returns>The value of the maximum value of a node in a tree</returns>
+        public int MaxValueOfTree(Node<int> root)
+        {
+            Node<int> maxValue = new Node<int>(0);
+            List<int> traversal = new List<int>();
+            // create a PreOrder method to traverse this list
+            // reassign the value of maxValue to the value of the biggest Node using if statements
+            MaxValueOfTree(traversal, root, maxValue);
+            return maxValue.Value;
+
+        }
+
+        /// <summary>
+        /// Private MaxValueOfTree -  Traverses a binary tree and performs pre-order logic to find out which node is the maximum value
+        /// </summary>
+        /// <param name="traversal">A list that will contain the value of the nodes after traversing the tree</param>
+        /// <param name="root">The root of the tree passed in</param>
+        /// <param name="maxValue">The value of the maximum value of a node in the tree</param>
+        /// <returns></returns>
+        private int MaxValueOfTree(List<int> traversal, Node<int> root, Node<int> maxValue)
+        {
+            traversal.Add(root.Value);
+
+            if (maxValue.Value <= root.Value)
+            {
+                maxValue.Value = root.Value;
+            }
+            
+            if (root.LeftChild != null)
+            {
+                MaxValueOfTree(traversal, root.LeftChild, maxValue);
+            }
+
+            if (root.RightChild != null)
+            {
+                MaxValueOfTree(traversal, root.RightChild, maxValue);
+            }
+
+            return maxValue.Value;
+
+        }
     }
 }

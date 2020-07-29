@@ -19,6 +19,10 @@ namespace Trees
             Root = root;
         }
 
+        /// <summary>
+        /// Add - Method instantiates a root, a temp and a new node. Determines where to place the new node based on the value passed in
+        /// </summary>
+        /// <param name="value">Int - any number passed in</param>
         public void Add(int value)
         {
             Node<int> root = Root;
@@ -65,6 +69,11 @@ namespace Trees
             
         }
 
+        /// <summary>
+        /// Contains - Method that uses a temp node to travel through a tree to determine if a node of the same value as the passed-in value exists
+        /// </summary>
+        /// <param name="value">The value passed-in that we want to evaluate for the presence of</param>
+        /// <returns>A true or a false depending on if the value was found</returns>
         public bool Contains(int value)
         {
             Node<int> root = Root;
