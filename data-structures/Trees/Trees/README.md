@@ -15,5 +15,8 @@ The approach of each method described are all similar. Each method starts by ins
 The Big O of each method is O(n) because at worst the complexity of each traversal is dictated by the depth of the tree.
 
 ## Solution
+Version 3.1 - *README updated* - 28 Jul 2020
+Version 3.0 - *Added new method to Tree.cs, MaxValueOfTree. UnitTests Written/Passing. Summaries added for new methods and for methods in BinarySearchTree.cs class.* - 28 Jul 2020
+Version 2.0 - *Added new class, BinarySearchTree.cs. New methods, Add and Contains. Added UnitTests, UnitTests passing* - 28 Jul 2020
 Version 1.1 - *README added/updated* - 24 Jul 2020
 Version 1.0 - *Feature tasks complete, added classes, Tree and Node, made classes generic classes, added methods, PreOrder, InOrder, PostOrder, added UnitTests, UnitTests passing, summary comments added* - 24 Jul 2020
