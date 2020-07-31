@@ -9,10 +9,15 @@ The three methods of traversal contained within are:
 - InOrder: an in-ordered traversal
 - PostOrder: a post-ordered traversal
 
+Also contained within is a method for finding the max value of the tree:
+- MaxValueOfTree: uses a pre-ordered traversal and a temp node to track the value of largest node value
+
 ## Approach & Efficiency
 The approach of each method described are all similar. Each method starts by instantiating a list obejct that the node values will be placed in. Each method then calls upon a separate private helper method by the same name that performs the logic to build out the traversal lists.
 
 The Big O of each method is O(n) because at worst the complexity of each traversal is dictated by the depth of the tree.
+
+The Big O efficiency of MaxValueOfTree is O(n) because we are only borrowing from the techniques used in the PreOrder method, which is also 0(n).
 
 ## Solution
 Version 3.1 - *README updated* - 28 Jul 2020
