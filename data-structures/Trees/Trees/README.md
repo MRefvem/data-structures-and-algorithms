@@ -20,6 +20,7 @@ The Big O of each method is O(n) because at worst the complexity of each travers
 The Big O efficiency of MaxValueOfTree is O(n) because we are only borrowing from the techniques used in the PreOrder method, which is also 0(n).
 
 ## Solution
+Version 3.2 - *README updated, includes effieciency analysis of MaxValueOfTree* - 30 Jul 2020
 Version 3.1 - *README updated* - 28 Jul 2020
 Version 3.0 - *Added new method to Tree.cs, MaxValueOfTree. UnitTests Written/Passing. Summaries added for new methods and for methods in BinarySearchTree.cs class.* - 28 Jul 2020
 Version 2.0 - *Added new class, BinarySearchTree.cs. New methods, Add and Contains. Added UnitTests, UnitTests passing* - 28 Jul 2020
