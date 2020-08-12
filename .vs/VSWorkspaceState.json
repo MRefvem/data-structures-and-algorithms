@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
+    "\\challenges\\InsertionSort",
+    "\\challenges\\LLZip",
     "\\challenges\\QueueWithStacks"
   ],
-  "SelectedNode": "\\challenges\\QueueWithStacks\\QueueWithStacks.sln",
+  "SelectedNode": "\\challenges\\InsertionSort\\InsertionSort.sln",
   "PreviewInSolutionExplorer": false
 }
