@@ -8,6 +8,9 @@
 - [QueueWithStacks](challenges/QueueWithStacks)
 - [FIFOAnimalShelter](challenges/FIFOAnimalShelter)
 - [MultiBracketValidation](challenges/MultiBracketValidation)
+- [InsertionSort](challenges/InsertionSort)
+- [MergeSort](challenges/MergeSort)
+- [QuickSort](challenges/QuickSort)
 
 ## Data Structures (C#)
 - [LinkedLists](data-structures/LinkedLists)
