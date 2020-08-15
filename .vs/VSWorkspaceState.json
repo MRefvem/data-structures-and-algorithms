@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\InsertionSort",
-    "\\challenges\\LLZip",
-    "\\challenges\\MergeSort",
-    "\\challenges\\QueueWithStacks"
+    "\\challenges\\QuickSort"
   ],
-  "SelectedNode": "\\challenges\\MergeSort\\BLOG.md",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
