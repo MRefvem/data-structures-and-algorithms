@@ -1,0 +1,12 @@
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\bin\Debug\netcoreapp3.1\Hashtable.deps.json
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\bin\Debug\netcoreapp3.1\Hashtable.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\bin\Debug\netcoreapp3.1\LinkedLists.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\bin\Debug\netcoreapp3.1\LinkedLists.pdb
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.csprojAssemblyReference.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.AssemblyInfoInputs.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.AssemblyInfo.cs
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.csproj.CopyComplete
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\bin\Debug\netcoreapp3.1\Hashtable.pdb
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.csproj.CoreCompileInputs.cache
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.dll
+C:\Users\mkref\codefellows\data-structures-and-algorithms\data-structures\Hashtable\Hashtable\obj\Debug\netcoreapp3.1\Hashtable.pdb
