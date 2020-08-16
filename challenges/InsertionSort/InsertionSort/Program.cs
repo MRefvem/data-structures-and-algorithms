@@ -2,15 +2,19 @@
 
 namespace InsertionSort
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             //int[] arr = [8, 4, 23, 42, 16, 15];
-            //InsertionSort(arr);
+            //Insertion_Sort(arr);
         }
 
-        static void InsertionSort(int[] arr)
+        /// <summary>
+        /// Insertion_Sort - Method uses the insertion algorithm to sort an array in place
+        /// </summary>
+        /// <param name="arr">The array to be sorted</param>
+        public static int[] Insertion_Sort(int[] arr)
         {
             // for loop to iterate over the length of the array
             for (int i = 1; i < arr.Length; i++)
@@ -31,9 +35,10 @@ namespace InsertionSort
                     // they appear to have switched positions
 
                     // temp now equals the value of array at index position J plus 1 to stay consistent with arr[j]
-                    temp = arr[j + 1];
                 }
+                arr[j + 1] = temp;
             }
+        return arr;
         }
     }
 }
