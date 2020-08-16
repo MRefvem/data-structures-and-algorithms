@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges",
-    "\\challenges\\QuickSort"
+    "\\challenges\\QuickSort",
+    "\\data-structures",
+    "\\data-structures\\Hashtable",
+    "\\data-structures\\Hashtable\\Hashtable",
+    "\\data-structures\\Hashtable\\HashtableTests"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\data-structures\\Hashtable\\Hashtable.sln",
   "PreviewInSolutionExplorer": false
 }
