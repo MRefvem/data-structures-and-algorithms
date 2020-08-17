@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\challenges\\QuickSort",
-    "\\data-structures",
-    "\\data-structures\\Hashtable",
-    "\\data-structures\\Hashtable\\Hashtable",
-    "\\data-structures\\Hashtable\\HashtableTests"
+    "\\challenges",
+    "\\challenges\\InsertionSort",
+    "\\challenges\\InsertionSort\\assets",
+    "\\challenges\\InsertionSort\\InsertionSort",
+    "\\challenges\\MergeSort\\MergeSort",
+    "\\challenges\\QuickSort\\assets",
+    "\\challenges\\QuickSort\\QuickSort"
   ],
-  "SelectedNode": "\\data-structures\\Hashtable\\Hashtable.sln",
+  "SelectedNode": "\\challenges\\InsertionSort\\InsertionSort\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

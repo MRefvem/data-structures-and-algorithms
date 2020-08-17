@@ -16,5 +16,27 @@ namespace XUnitTestProject1
 
             Assert.Equal(sortedArr, result);
         }
+
+        [Fact]
+        public void CanQuickSortTheReversedArray()
+        {
+            int[] arr = new int[] { 20, 18, 12, 8, 5, -2 };
+            int[] sortedArr = new int[] { -2, 5, 8, 12, 18, 20 };
+
+            int[] result = Quick_Sort(arr, 0, arr.Length - 1);
+
+            Assert.Equal(sortedArr, result);
+        }
+
+        [Fact]
+        public void CanQuickSortNearlySorted()
+        {
+            int[] arr = new int[] { 2, 3, 5, 7, 13, 11 };
+            int[] sortedArr = new int[] { 2, 3, 5, 7, 11, 13 };
+
+            int[] result = Quick_Sort(arr, 0, arr.Length - 1);
+
+            Assert.Equal(sortedArr, result);
+        }
     }
 }

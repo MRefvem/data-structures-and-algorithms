@@ -16,5 +16,38 @@ namespace XUnitTestProject1
 
             Assert.Equal(sortedArr, result);
         }
+
+        [Fact]
+        public void CanMergeSortTheReversedArray()
+        {
+            int[] arr = new int[] { 20, 18, 12, 8, 5, -2 };
+            int[] sortedArr = new int[] { -2, 5, 8, 12, 18, 20 };
+
+            int[] result = Merge_Sort(arr);
+
+            Assert.Equal(sortedArr, result);
+        }
+
+        [Fact]
+        public void CanMergeSortTheFewUniquesArray()
+        {
+            int[] arr = new int[] { 5, 12, 7, 5, 5, 7 };
+            int[] sortedArr = new int[] { 5, 5, 5, 7, 7, 12 };
+
+            int[] result = Merge_Sort(arr);
+
+            Assert.Equal(sortedArr, result);
+        }
+
+        [Fact]
+        public void CanMergeSortTheNearlySortedArray()
+        {
+            int[] arr = new int[] { 2, 3, 5, 7, 13, 11 };
+            int[] sortedArr = new int[] { 2, 3, 5, 7, 11, 13 };
+
+            int[] result = Merge_Sort(arr);
+
+            Assert.Equal(sortedArr, result);
+        }
     }
 }
