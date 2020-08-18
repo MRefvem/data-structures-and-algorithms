@@ -2,13 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\InsertionSort",
     "\\challenges\\InsertionSort\\assets",
     "\\challenges\\InsertionSort\\InsertionSort",
-    "\\challenges\\MergeSort\\MergeSort",
-    "\\challenges\\QuickSort\\assets",
-    "\\challenges\\QuickSort\\QuickSort"
+    "\\challenges\\MergeSort",
+    "\\challenges\\MergeSort\\MergeSort"
   ],
-  "SelectedNode": "\\challenges\\InsertionSort\\InsertionSort\\Program.cs",
+  "SelectedNode": "\\challenges\\MergeSort\\MergeSort.sln",
   "PreviewInSolutionExplorer": false
 }
