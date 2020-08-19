@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\InsertionSort\\assets",
-    "\\challenges\\InsertionSort\\InsertionSort",
     "\\challenges\\MergeSort",
-    "\\challenges\\MergeSort\\MergeSort"
+    "\\challenges\\MergeSort\\MergeSort",
+    "\\challenges\\RepeatedWord",
+    "\\challenges\\RepeatedWord\\assets",
+    "\\challenges\\RepeatedWord\\RepeatedWord"
   ],
-  "SelectedNode": "\\challenges\\MergeSort\\MergeSort.sln",
+  "SelectedNode": "\\challenges\\RepeatedWord\\RepeatedWord\\Class1.cs",
   "PreviewInSolutionExplorer": false
 }

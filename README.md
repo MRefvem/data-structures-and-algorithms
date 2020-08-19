@@ -12,6 +12,7 @@
 - [Merge Sort](challenges/MergeSort)
 - [Quick Sort](challenges/QuickSort)
 - [Repeated Word](challenges/RepeatedWord)
+- [Tree Intersection](challenges/TreeIntersection)
 
 ## Data Structures (C#)
 - [Linked Lists](data-structures/LinkedLists)
