@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\challenges",
-    "\\challenges\\MergeSort",
     "\\challenges\\MergeSort\\MergeSort",
-    "\\challenges\\RepeatedWord",
     "\\challenges\\RepeatedWord\\assets",
-    "\\challenges\\RepeatedWord\\RepeatedWord"
+    "\\challenges\\TreeIntersection",
+    "\\challenges\\TreeIntersection\\assets"
   ],
-  "SelectedNode": "\\challenges\\RepeatedWord\\RepeatedWord\\Class1.cs",
+  "SelectedNode": "\\challenges\\TreeIntersection\\assets\\CodeChallengeClass32.png",
   "PreviewInSolutionExplorer": false
 }
