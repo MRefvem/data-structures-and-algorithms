@@ -1,0 +1,9 @@
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\bin\Debug\netcoreapp3.1\GraphsImplementation.deps.json
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\bin\Debug\netcoreapp3.1\GraphsImplementation.dll
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\bin\Debug\netcoreapp3.1\GraphsImplementation.pdb
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\obj\Debug\netcoreapp3.1\GraphsImplementation.csprojAssemblyReference.cache
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\obj\Debug\netcoreapp3.1\GraphsImplementation.AssemblyInfoInputs.cache
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\obj\Debug\netcoreapp3.1\GraphsImplementation.AssemblyInfo.cs
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\obj\Debug\netcoreapp3.1\GraphsImplementation.csproj.CoreCompileInputs.cache
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\obj\Debug\netcoreapp3.1\GraphsImplementation.dll
+C:\Users\mkref\source\repos\GraphsImplementation\GraphsImplementation\obj\Debug\netcoreapp3.1\GraphsImplementation.pdb

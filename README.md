@@ -20,6 +20,7 @@
 - [Stacks and Queues](data-structures/StacksAndQueues)
 - [Trees](data-structures/Trees)
 - [Hash Tables](data-structures/Hashtable)
+- [Graphs](data-structures/GraphsImplementation)
 
 ## Code Challenges (JavaScript)
 - [Array and String Manipulation](challenges/array-and-string-manipulation)
